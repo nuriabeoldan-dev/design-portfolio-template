@@ -1,0 +1,41 @@
+.menu {
+  display: none;
+  background: white;
+}
+
+.menu.open {
+  display: block;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 1rem;
+}
+
+.menu a {
+  display: block;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.project-list {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.project-list li {
+  margin-bottom: 1rem;
+}
+
+.project-list a {
+  text-decoration: none;
+  color: black;
+}

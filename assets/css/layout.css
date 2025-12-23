@@ -1,0 +1,36 @@
+.site-header {
+  position: fixed;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #eee;
+  z-index: 10;
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel {
+  min-height: 100vh;
+  padding: 6rem 1rem;
+  max-width: var(--max-width);
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.panel-alt {
+  background: var(--color-alt);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--color-muted);
+}
