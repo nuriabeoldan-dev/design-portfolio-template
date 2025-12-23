@@ -10,6 +10,8 @@
   	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
 
 
   <!-- CSS principal -->
@@ -31,7 +33,7 @@
   </button>
   <nav class="menu">
     <a href="#about">Sobre mí</a>
-    <a href="#projects">Mis Proyectos</a>
+    <a href="#projects">Proyectos</a>
     <a href="#contact">Contacto</a>
   </nav>
 </header>
@@ -40,27 +42,127 @@
 <main>
 
   <!-- HERO -->
-  <section id="hero" class="panel hero">
-	<div class="hero-bg"></div>
+ 	<section id="hero" class="panel hero">
+		<div class="hero-bg"></div>
 
-	<div class="hero-content">
-		<h1>
-		Hola, soy Nuria!<br>
-		Bienvenid@ a mi portfolio de diseño gráfico
-		</h1>
+		<!-- elemento gráfico -->
+		<div class="hero-shape"></div>
+
+		<div class="hero-content">
+			<h1>
+			<span class="hero-line muted">Hola, soy Nuria</span>
+			<span class="hero-line">Diseñadora gráfica</span>
+			<span class="hero-line outline">y visual</span>
+			</h1>
+		</div>
+	</section>
+
+
+
+  <!-- ABOUT -->
+  <section id="about" class="panel about-section">
+   <div class="about-content">
+
+    <div class="about-text">
+      <h2>SOBRE MÍ</h2>
+      <p>
+        Soy Nuria, estudiante de la carrera de Diseño 
+		Gráfico en UDIT. Actualmente estoy cursando el 
+		cuarto año. Soy una persona creativa, con ganas 
+		de aprender en un entorno profesional y adquirir
+		nuevas habilidades que me ayuden a desarrollarme en mi sector. <br><br>
+		Mis intereses abarcan la ilustración, la fotografía, la animación, 
+		el modelado 3D y el diseño de imagen corporativa, áreas 
+		en las que busco profundizar y especializarme.
+      </p>
+    </div>
+
+    <div class="about-image">
+      <img src="assets/img/foto perfil.jpeg" alt="Foto de Nuria">
+    </div>
+
+   </div>
+  </section>
+
+  <!--SOFTWARES-->
+  <section class="panel software-section">
+	<div class="software-content">
+
+		<h2>SOFTWARES</h2>
+
+		<div class="software-chart">
+		<img
+			src="assets/img/estadistica pastel web_Mesa de trabajo 1.png"
+			alt="Gráfico circular de software que utilizo"
+		>
+		</div>
+
+		<p class="software-caption">
+		Estos son los programas que utilizo habitualmente.
+		</p>
+
 	</div>
   </section>
 
 
-  <!-- ABOUT -->
-  <section id="about" class="panel">
-    <h2>SOBRE MÍ</h2>
-    <p>
-      Trabajo entre diseño gráfico y web,
-      con especial interés en tipografía,
-      ritmo visual y claridad.
-    </p>
-  </section>
+  <!--MIS HABILIDADES-->>
+	<section id="skills" class="panel skills-section">
+		<h2>MIS HABILIDADES</h2>
+
+		<div class="skills-grid">
+
+			<div class="skill">
+			<span class="skill-name">Branding</span>
+			<div class="skill-bar">
+				<div class="skill-fill" data-level="90"></div>
+			</div>
+			</div>
+
+			<div class="skill">
+			<span class="skill-name">Ilustración</span>
+			<div class="skill-bar">
+				<div class="skill-fill" data-level="95"></div>
+			</div>
+			</div>
+
+			<div class="skill">
+			<span class="skill-name">Modelado 3D</span>
+			<div class="skill-bar">
+				<div class="skill-fill" data-level="80"></div>
+			</div>
+			</div>
+
+			<div class="skill">
+			<span class="skill-name">Fotografía</span>
+			<div class="skill-bar">
+				<div class="skill-fill" data-level="80"></div>
+			</div>
+			</div>
+
+			<div class="skill">
+			<span class="skill-name">Animación 2D</span>
+			<div class="skill-bar">
+				<div class="skill-fill" data-level="75"></div>
+			</div>
+			</div>
+
+			<div class="skill">
+			<span class="skill-name">Diseño Editorial</span>
+			<div class="skill-bar">
+				<div class="skill-fill" data-level="70"></div>
+			</div>
+			</div>
+
+			<div class="skill">
+			<span class="skill-name">Diseño para RRSS</span>
+			<div class="skill-bar">
+				<div class="skill-fill" data-level="95"></div>
+			</div>
+			</div>
+
+		</div>
+	</section>
+
 
   <!-- PROJECT INDEX -->
   <section id="projects" class="panel panel-alt">

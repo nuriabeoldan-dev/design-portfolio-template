@@ -1,25 +1,60 @@
 /* Estilos específicos SOLO de la home */
 
 .hero {
-    overflow: hidden;
+  position:relative;
+  overflow: hidden;
 }
 
-/* Fondo decorativo */
+/* Fondo */
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    0deg,
-    #e8402b,
-    #f9b125,
-    #134685
+  background: radial-gradient(
+    circle at top left,
+    #3a47a5,
+    #e8402b
   );
   z-index: 1;
 }
 
-/* Contenido que se mueve */
+/* Forma orgánica */
+.hero-shape {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  top: 10%;
+  right: -10%;
+  filter: blur(40px);
+  z-index: 2;
+}
+
+/* Contenido */
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   transition: transform 0.1s ease-out;
+}
+
+/* Tipografía hero */
+.hero h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 1.05;
+  color: white;
+}
+
+.hero-line {
+  display: block;
+}
+
+.hero-line.muted {
+  font-size: 0.6em;
+  opacity: 0.7;
+}
+
+.hero-line.outline {
+  color: transparent;
+  -webkit-text-stroke: 0.05px white;
 }

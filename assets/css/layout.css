@@ -8,6 +8,7 @@ header {
   width: 100%;
   top: 0;
   z-index: 1000;
+  transition: opacity 0.3s ease; /* transición suave */
 }
 
 .logo {
@@ -18,8 +19,8 @@ header {
 .panel {
   min-height: 100vh;
   padding: 6rem 1rem;
-  max-width: var(--max-width);
-  margin: auto;
+  max-width: 100%;
+  margin: 0 auto;
 
   display: flex;
   flex-direction: column;
@@ -46,3 +47,124 @@ header {
   width: auto;
   display: block;
 }
+
+.about-section {
+  padding: 10rem 1rem; /* MÁS aire arriba y abajo */
+}
+
+.about-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5rem; /* más espacio entre texto e imagen */
+  align-items: center;
+}
+
+/* TEXTO */
+.about-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.about-text h2 {
+  margin-bottom: 2rem; /* separación clara */
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;    /* lectura más cómoda */
+  max-width: 52ch;     /* ancho editorial */
+}
+
+/* IMAGEN */
+.about-image {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 600px;   /* controla el tamaño real */
+  display: block;
+  border-radius: 12px;
+}
+
+/* HABILIDADES SECCION*/
+.skills-section {
+  padding: 10rem 1rem;
+}
+
+.skills-section h2 {
+  margin-bottom: 4rem;
+}
+
+.skills-grid {
+  max-width: 900px;
+  display: grid;
+  gap: 2.5rem;
+}
+
+/* Cada skill */
+.skill {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.skill-name {
+  font-size: 1.1rem;
+}
+
+/* Barra */
+.skill-bar {
+  height: 6px;
+  background: #e0e0e0;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-fill {
+  height: 100%;
+  width: 0; /* empieza en 0 */
+  background: #303c90;
+  transition: width 1s ease;
+}
+
+.software-section {
+  padding: 8rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.software-content {
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Imagen */
+.software-chart {
+  margin: 2rem auto 2rem;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.software-chart img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Texto pequeño */
+.software-caption {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  text-align: center;
+}
+
