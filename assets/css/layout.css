@@ -141,8 +141,12 @@ header {
 }
 
 .software-content {
-  max-width: 900px;
-  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows:0fr 0fr;
+  align-items: center;
+
 }
 
 /* Imagen */
@@ -167,4 +171,5 @@ header {
   color: var(--color-muted);
   text-align: center;
 }
+
 
