@@ -9,9 +9,10 @@
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    120deg,
-    #f2f2f2,
-    #e6e6e6
+    0deg,
+    #e8402b,
+    #f9b125,
+    #134685
   );
   z-index: 1;
 }

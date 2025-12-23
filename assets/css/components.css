@@ -1,23 +1,35 @@
 .menu {
-  display: none;
-  background: white;
+  position: absolute;
+  top: 60px; /* debajo del header */
+  right: 0;
+  width: 200px;
+  background-color: #303c90;
+  border-radius: 8px;
+  overflow: hidden;
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.menu.open {
-  display: block;
-}
-
-.menu ul {
-  list-style: none;
-  padding: 1rem;
+.menu.active {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .menu a {
   display: block;
-  padding: 0.5rem 0;
+  padding: 15px;
+  color: white;
   text-decoration: none;
-  color: black;
+  transition: background-color 0.3s;
 }
+
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 
 .button {
   font-size: 1.2rem;
@@ -39,3 +51,60 @@
   text-decoration: none;
   color: black;
 }
+
+/* Botón hamburguesa */
+.hamburger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #000000;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px;
+  transition: background-color 0.3s;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover */
+.hamburger:hover {
+  background-color: #ffffff;
+}
+
+.hamburger:hover span {
+  background-color: #000000;
+}
+
+/* Animación al abrir/cerrar (opcional) */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(10px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-10px);
+}
+
+.logo {
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1); /* se agranda un 10% */
+}
+

@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Tu Nombre — Portfolio</title>
+  <title>Nuria Beiro — Graphic Designer</title>
+  <link rel="icon" type="image/png" href="assets/img/logotipo_azul.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Tipografía -->
@@ -12,41 +13,40 @@
 
 
   <!-- CSS principal -->
-  <link rel="stylesheet" href="assets/css/styles.css">
+  	<link rel="stylesheet" href="assets/css/styles.css">
 
   <!-- JS -->
-  <script defer src="assets/js/main.js"></script>
+  	<script defer src="assets/js/main.js"></script>
 </head>
 
 <body>
 
 <!-- HEADER -->
-<header class="site-header">
-  <div class="header-inner">
-    <span class="logo">Nuria Beiro Oldán</span>
-    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
-  </div>
-
+<header>
+  <img src="assets/img/logotipo_blanco.png" alt="Mi Logo" class="logo" onclick="scrollToSection('hero')">
+  <button class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
   <nav class="menu">
-    <ul>
-      <li><a href="#about">Sobre mí</a></li>
-      <li><a href="#projects">Proyectos</a></li>
-      <li><a href="#contact">Contacto</a></li>
-    </ul>
+    <a href="#about">Sobre mí</a>
+    <a href="#projects">Mis Proyectos</a>
+    <a href="#contact">Contacto</a>
   </nav>
 </header>
+
 
 <main>
 
   <!-- HERO -->
-  <section class="panel hero">
+  <section id="hero" class="panel hero">
 	<div class="hero-bg"></div>
 
 	<div class="hero-content">
 		<h1>
-		Diseñadora gráfica<br>
-		enfocada en<br>
-		experiencias visuales
+		Hola, soy Nuria!<br>
+		Bienvenid@ a mi portfolio de diseño gráfico
 		</h1>
 	</div>
   </section>
@@ -86,7 +86,7 @@
   <section id="contact" class="panel panel-alt">
     <h2>CONTACTO</h2>
     <a class="button" href="mailto:tucorreo@email.com">
-      tucorreo@email.com
+      nuriabeoldan@gmail.com
     </a>
   </section>
 
@@ -96,5 +96,7 @@
   <p>© 2026 Nuria Beiro Oldán</p>
 </footer>
 
+<script src="assets/js/main.js"></script>
 </body>
+
 </html>

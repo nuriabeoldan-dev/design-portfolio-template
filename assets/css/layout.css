@@ -1,18 +1,19 @@
-.site-header {
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #000000;
   position: fixed;
   width: 100%;
-  background: white;
-  border-bottom: 1px solid #eee;
-  z-index: 10;
+  top: 0;
+  z-index: 1000;
 }
 
-.header-inner {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
+.logo {
+  height: 60px;
 }
+
 
 .panel {
   min-height: 100vh;
@@ -33,4 +34,15 @@
   text-align: center;
   padding: 2rem;
   color: var(--color-muted);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  display: block;
 }
