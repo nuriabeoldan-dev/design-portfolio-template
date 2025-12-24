@@ -1,41 +1,48 @@
 /* Estilos específicos SOLO de la home */
-
 .hero {
-  position:relative;
+  position: relative;
+  height: 100vh; /* ocupa toda la pantalla */
+  width: 100%;
   overflow: hidden;
 }
 
-/* Fondo */
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(
-    circle at top left,
-    #3a47a5,
-    #e8402b
-  );
-  z-index: 1;
+/* Carrusel */
+.hero-carousel {
+  position: absolute; /* ocupa toda la sección */
+  top: 0;
+  left: 0;
+  display: flex;
+  width: calc(6 * 100vw); /* 6 imágenes */
+  height: 100%;
+  animation: slide 30s linear infinite;
 }
 
-/* Forma orgánica */
-.hero-shape {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 50%;
-  top: 10%;
-  right: -10%;
-  filter: blur(40px);
-  z-index: 2;
+.hero-carousel img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover; /* cubre todo, recorta si es necesario */
 }
 
-/* Contenido */
+/* Texto centrado absoluto */
 .hero-content {
-  position: relative;
-  z-index: 3;
-  transition: transform 0.1s ease-out;
+  position: absolute;        /* permite posicionarlo sobre el carrusel */
+  top: 50%;                  /* centro vertical */
+  left: 50%;                 /* centro horizontal */
+  transform: translate(-50%, -50%); /* ajuste exacto del centro */
+  z-index: 2;                /* encima del carrusel */
+  color: white;
+  text-align: center;        /* centra el texto dentro del div */
+  padding: 0 20px;           /* evita que toque los bordes en móvil */
+  max-width: 90%;            /* limita ancho para que no se desborde */
+  font-size: 2.5rem;         /* ajustable según tu estilo */
 }
+
+/* Animación del carrusel */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 
 /* Tipografía hero */
 .hero h1 {

@@ -152,8 +152,8 @@
 }
 
 .project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  transform: translateY(-6px) ;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 }
 
 .project-tags {
@@ -171,5 +171,55 @@
   border-radius: 4px;
   white-space: nowrap;
 }
+
+.card-button {
+  display: block;           /* ocupa todo el ancho */
+  width: 100%;
+  margin-top: 1.5rem;
+
+  padding: 14px 0;
+  text-align: center;
+
+  background-color: #303c90;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-button:hover {
+  background-color: #1f2a6b;
+  transform: translateY(-2px);
+}
+
+.card-footer {
+  margin-top: auto; /* ← ESTA es la clave */
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.cv-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #303c90; /* azul */
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cv-button:hover {
+  background-color: #1f2865;
+  transform: translateY(-2px);
+}
+
+
+
 
 

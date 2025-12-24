@@ -1,25 +1,14 @@
 
 // HERO
-const hero = document.querySelector(".hero");
-const heroContent = document.querySelector(".hero-content");
+const heroContent = document.querySelector('.hero-content');
 
-// Evitamos el efecto en móviles
-if (window.innerWidth > 768) {
-  hero.addEventListener("mousemove", (e) => {
-    const { width, height } = hero.getBoundingClientRect();
+document.addEventListener('mousemove', e => {
+  const x = (e.clientX / window.innerWidth - 0.5) * 20;
+  const y = (e.clientY / window.innerHeight - 0.5) * 20;
+  heroContent.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
+});
 
-    const x = (e.clientX / width - 0.5) * 20;
-    const y = (e.clientY / height - 0.5) * 20;
 
-    heroContent.style.transform = `
-      translate(${x}px, ${y}px)
-    `;
-  });
-
-  hero.addEventListener("mouseleave", () => {
-    heroContent.style.transform = "translate(0, 0)";
-  });
-}
 
 // HAMBURGUER MENU
 document.addEventListener('DOMContentLoaded', () => {

@@ -43,10 +43,25 @@
 
   <!-- HERO -->
  	<section id="hero" class="panel hero">
-		<div class="hero-bg"></div>
 
-		<!-- elemento gráfico -->
-		<div class="hero-shape"></div>
+		<!-- Carrusel duplicando imágenes para efecto infinito -->
+		<div class="hero-carousel">
+			<img src="assets/img/espacio_noroeste.png" alt="Imagen 1">
+			<img src="assets/img/sicilia_nera.png" alt="Imagen 2">
+			<img src="assets/img/colección_amalgama.png" alt="Imagen 3">
+			<img src="assets/img/vikingo_3D.png" alt="Imagen 3">
+
+
+			<!-- Duplicamos para que el ciclo sea continuo -->
+			<img src="assets/img/espacio_noroeste.png" alt="Imagen 1">
+			<img src="assets/img/sicilia_nera.png" alt="Imagen 2">
+			<img src="assets/img/colección_amalgama.png" alt="Imagen 3">
+			<img src="assets/img/vikingo_3D.png" alt="Imagen 3">
+
+		</div>
+
+		<!-- Capa negra semitransparente -->
+		<div class="hero-overlay"></div>
 
 		<div class="hero-content">
 			<h1>
@@ -75,6 +90,11 @@
 		el modelado 3D y el diseño de imagen corporativa, áreas 
 		en las que busco profundizar y especializarme.
       </p>
+
+	  <!-- Botón CV -->
+      <a href="assets/docs/cv_beiro oldán, nuria.pdf" class="button cv-button" target="_blank" rel="noopener">
+        Ver CV
+      </a>
     </div>
 
     <div class="about-image">
@@ -91,15 +111,14 @@
 		<h3>SOFTWARES</h3>
 
 		<div class="software-chart">
+			<p class="software-caption">
+			Estos son los programas que utilizo habitualmente.
+			</p>
 		<img
 			src="assets/img/estadistica pastel web_Mesa de trabajo 1.png"
 			alt="Gráfico circular de software que utilizo"
 		>
 		</div>
-
-		<p class="software-caption">
-		Estos son los programas que utilizo habitualmente.
-		</p>
 
 	</div>
   </section>
@@ -178,13 +197,22 @@
 
         <div class="project-info">
           <h4>SICILIA NERA</h4>
-          <p>Identidad visual y diseño editorial.</p>
-		  	<div class="project-tags">
-				<span class="tag">Diseño Editorial</span>
-				<span class="tag">Mafia Italiana</span>
-				<span class="tag">Adobe Indesign</span>
-				
-    		</div>
+          <p class="card-description">Diseño de un periódico impreso dedicado exclusivamente al fenómeno de la mafia italiana. Combina artículos históricos, reportajes actuales, análisis culturales y ficción documental.</p>
+		  	
+			<div class="card-footer">
+				<div class="project-tags">
+					<span class="tag">Diseño Editorial</span>
+					<span class="tag">Adobe Indesign</span>
+				</div>
+				<!-- BOTÓN -->
+				<a 
+				href="https://www.behance.net/gallery/228267635/SICILIA-NERA-Diseno-Editorial-de-un-Periodico"
+				target="_blank"
+				class="card-button"
+				>
+				VER PROYECTO
+				</a>
+			</div>
         </div>
       </article>
 
@@ -195,12 +223,23 @@
 
         <div class="project-info">
           <h4>VIKINGO</h4>
-          <p>Diseño web y experiencia de usuario.</p>
-		  	<div class="project-tags">
-				<span class="tag">Modelado 3D</span>
-				<span class="tag">Blender</span>
-				<span class="tag">Render</span>
-    		</div>
+          <p class="card-description">Diseño de un personaje de vikingo en 3D, <br>partiendo de un concept art en 2D generado por IA.</p>
+		  	
+		  <div class="card-footer">
+			<div class="project-tags">
+					<span class="tag">Modelado 3D</span>
+					<span class="tag">Blender</span>
+					<span class="tag">Render</span>
+				</div>
+				<!-- BOTÓN -->
+				<a 
+				href="https://www.behance.net/gallery/228281215/VIKINGO-Modelado-3D"
+				target="_blank"
+				class="card-button"
+				>
+				VER PROYECTO
+				</a>
+			</div>
         </div>
       </article>
 
@@ -211,12 +250,92 @@
 
 		<div class="project-info">
           <h4>ESPACIO NOROESTE</h4>
-          <p>Dirección de arte y motion.</p>
+          <p class="card-description">Diseño de imagen corporativa de Espacio Noroeste S.L., una empresa que gestiona el alquiler de alojamientos turísticos y de corta estancia en Galicia (España).</p>
 		  <div class="project-tags">
 				<span class="tag">Branding</span>
 				<span class="tag">Adobe Photoshop</span>
 				<span class="tag">Adobe Illustrator</span>
     		</div>
+			<!-- BOTÓN -->
+			<a 
+			href="https://www.behance.net/gallery/234567949/ESPACIO-NOROESTE"
+			target="_blank"
+			class="card-button"
+			>
+			VER PROYECTO
+			</a>
+        </div>
+      </article>
+
+	  <article class="project-card">
+		<div class="card-image">
+        	<img src="assets/img/album_ilustrado.png" alt="Proyecto 3">
+		</div>
+
+		<div class="project-info">
+          <h4>ÁLBUM ILUSTRADO</h4>
+          <p class="card-description">Este proyecto es una interpretación visual del relato "El niño al que se le murió el amigo", de Ana María Matute, adaptado al formato de álbum ilustrado para un público infantil. A través de una narrativa delicada y poética, la autora aborda el tema de la pérdida desde la perspectiva de un niño.</p>
+		  <div class="project-tags">
+				<span class="tag">Diseño Editorial</span>
+				<span class="tag">Ilustración</span>
+				<span class="tag">Adobe Indesign</span>
+    		</div>
+			<!-- BOTÓN -->
+			<a 
+			href="https://www.behance.net/gallery/228465671/EL-NINO-AL-QUE-SE-LE-MURIO-EL-AMIGO-Album-Ilustrado"
+			target="_blank"
+			class="card-button"
+			>
+			VER PROYECTO
+			</a>
+        </div>
+      </article>
+
+	  <article class="project-card">
+		<div class="card-image">
+        	<img src="assets/img/colección_amalgama.png" alt="Proyecto 3">
+		</div>
+
+		<div class="project-info">
+          <h4>COLECCIÓN AMALGAMA</h4>
+          <p class="card-description">Este es un portfolio fotográfico de la colección Amalgama, realizadas por dos estudiantes de Diseño de Moda <br> en ESDAC Asturias (Oviedo).</p>
+		  <div class="project-tags">
+				<span class="tag">Moda</span>
+				<span class="tag">Fotografía</span>
+				<span class="tag">Adobe Photoshop</span>
+    		</div>
+			<!-- BOTÓN -->
+			<a 
+			href="https://www.behance.net/gallery/205442851/Fotografia-Portfolio-2024"
+			target="_blank"
+			class="card-button"
+			>
+			VER PROYECTO
+			</a>
+        </div>
+      </article>
+
+	  <article class="project-card">
+		<div class="card-image">
+        	<img src="assets/img/nilmar_group.png" alt="Proyecto 3">
+		</div>
+
+		<div class="project-info">
+          <h4>NILMAR GROUP</h4>
+          <p class="card-description">Manual de imagen corporativa de Nilmar Group SL, una empresa dedicada a la compraventa de bienes inmuebles.</p>
+		  <div class="project-tags">
+				<span class="tag">Branding</span>
+				<span class="tag">Manual Corporativo</span>
+				<span class="tag">Adobe Illustrator</span>
+    		</div>
+			<!-- BOTÓN -->
+			<a 
+			href="https://www.behance.net/gallery/204937707/NILMAR-GROUP-SL"
+			target="_blank"
+			class="card-button"
+			>
+			VER PROYECTO
+			</a>
         </div>
       </article>
 
@@ -225,7 +344,7 @@
 </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="panel panel-alt">
+  <section id="contact" class="panel panel-contact">
     <h2>CONTACTO</h2>
     <a class="button" href="mailto:tucorreo@email.com">
       nuriabeoldan@gmail.com

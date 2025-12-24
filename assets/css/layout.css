@@ -15,6 +15,15 @@ header {
   height: 60px;
 }
 
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* negro con 40% de opacidad */
+  z-index: 1; /* debajo del texto, encima del carrusel */
+}
 
 .panel {
   min-height: 100vh;
@@ -28,7 +37,10 @@ header {
 }
 
 .panel-alt {
-  background: var(--color-alt);
+  background-color: #303c90;
+}
+.panel-contact{
+  background-color: #e0e0e0;
 }
 
 .site-footer {
@@ -103,6 +115,8 @@ header {
 
 .skills-grid {
   max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
   display: grid;
   gap: 2.5rem;
 }
@@ -122,6 +136,7 @@ header {
 /* Barra */
 .skill-bar {
   height: 6px;
+  width: 100%;
   background: #e0e0e0;
   overflow: hidden;
   position: relative;
@@ -151,11 +166,12 @@ header {
 
 /* Imagen */
 .software-chart {
-  margin: 2rem auto 2rem;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  display: flex;
+  flex-direction: column; /* elementos en columna */
+  align-items: center;    /* centra horizontalmente */
+  gap: 1rem;              /* espacio entre párrafo y imagen */
 }
+
 
 .software-chart img {
   width: 100%;
@@ -167,7 +183,7 @@ header {
 
 /* Texto pequeño */
 .software-caption {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--color-muted);
   text-align: center;
 }
