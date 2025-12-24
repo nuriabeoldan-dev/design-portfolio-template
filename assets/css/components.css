@@ -111,22 +111,35 @@
 /* Proyectos */ 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+
+  max-width: 1200px;   /* 🔑 limita el ancho */
+  margin: 0 auto;      /* 🔑 centra el bloque */
+  padding: 40px 20px;
 }
+
+
 
 .project-card {
-  background: #ffffff;
+  background-color: #111;
   border-radius: 12px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 350px;
 }
 
-.project-card img {
+.card-image {
   width: 100%;
-  height: 180px;
+  height: 200px; /* ajusta este valor a tu gusto */
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .project-info {
@@ -134,7 +147,7 @@
   text-align: center;
 }
 
-.project-info h3 {
+.project-info h4 {
   margin-bottom: 8px;
 }
 
@@ -142,4 +155,21 @@
   transform: translateY(-6px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
+
+.project-tags {
+  display:block;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  background-color: #303c90;
+  color: white;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
 
